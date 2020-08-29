@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Nunito',sans-serif;
+}
+body{
+    background-color:#e8eaf6;
+}
+.container{
+    padding: 15px;
+    border-radius: 5px;
+    background-color:rgb(17, 17, 16);
+    width: 30%;
+    position: relative;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    box-shadow: 0 6px 8px rgba(214, 28, 28, 0.1);
+    transition: all .4s;
+    border-radius: 50px;
+    margin-top: 700px;
+    overflow: auto;
+
+}
+.container h1{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #4686f6;
+}
+.container .hello #search{
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    width: calc(100% - 30px);
+    font-size: 18px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+.container ul li{
+    list-style-type: none;
+    padding: 15px 0;
+    background-color: #000000;
+    transition: .4s;
+    color: white;
+}
+.container ul li:hover{background-color: #4686f6;}
+.container  ul {
+    color: #212121;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+@media screen and (max-width: 600px) {
+    .container{width: 350px;top: -250px;overflow: auto;height: 800px;color: white;}
+}
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <h2 style="color: white;margin: 10px;">Enter the movie name to get the details of</h2>
+            <div class="container" >
+                <div class="hello" style="position: sticky;top: -30px;background-color: black;">
+                    <h1>movie details</h1>
+                    <input id="search" onkeyup="filter()" type="text" placeholder="Search">
+                </div>
+                <ul id="Menu">
+
+                   <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;">DIL BECHARA</div><BR><pre style="font-weight:bolder">
+      IMDB : 10/10
+      ACTOR : SUSHANT SINGH
+     ACTRESS : SANJANA SANGHI
+      RELEASED YEAR : 2020
+                 </pre>
+                   <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;">SARKAR</div><BR><pre style="font-weight:bolder">
+      IMDB : 6.8/10
+      ACTOR : VIJAY JOSEPH
+      ACTRESS : KEERTI SURESH
+     RELEASED YEAR : 2018
+                 </pre></li>
+                   <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;">SHANDHAR</div><BR><pre style="font-weight:bolder">
+     IMDB : 3.8/10
+     ACTOR : SHAHID KAPOOR
+      ACTRESS : ALIA BHATT
+     RELEASED YEAR : 2015
+                 </pre></li>
+                 <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"xxx> WORLD FAMOUS LOVER</div><BR><pre style="font-weight:bolder">
+     IMDB : 4.6/10
+     ACTOR : VIJAY DEVARAKONDA
+      ACTRESS : RASHI KHANNA, 
+      AISHWARYA RAJESH,
+       CATHERINE TERASA
+      RELEASED YEAR : 2020
+                  </pre></li>
+                  <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> GUNJAN SAXENA</div><BR><pre style="font-weight:bolder">
+     IMDB : 5.2/10
+     ACTOR : ANGAD BEDI
+     ACTRESS : JANHVI KAPOOR 
+     RELEASED YEAR : 2020
+                  </pre></li>
+                 <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> TANHAJI</div><BR><pre style="font-weight:bolder">
+     IMDB : 7.6/10
+      ACTOR : VIJAYA DEVGUN,
+       SAIF ALI KHAN
+     ACTRESS : KAJOL
+     RELEASED YEAR : 2020
+                      </pre></li>
+     <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> SHAKUNTHALA DEVI</div><BR><pre style="font-weight:bolder">
+     IMDB : 6.2/10
+      ACTOR : JISSHU SENGUPTA
+     ACTRESS : VIDYA BALAN
+     RELEASED YEAR : 2020
+      </pre></li>
+      <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> STREET DANCER 3D</div><BR><pre style="font-weight:bolder">
+    IMDB : 3.6/10
+     ACTOR : VARUN DHAWAN
+    ACTRESS : SHRADHA KAPOOR
+     RELEASED YEAR : 2020
+        </pre></li>     
+        <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> LOVE AAJ KAL</div><BR><pre style="font-weight:bolder">
+    IMDB : 5/10
+    ACTOR : SAIF ALI KHAN
+    ACTRESS : SHRADHA KAPOOR
+     RELEASED YEAR : 2020
+             </pre></li>    
+        <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> DARBAR</div><BR><pre style="font-weight:bolder">
+    IMDB : 6.2/10
+    ACTOR : RAJNIKANTH
+    ACTRESS : NAYANTHARA
+    RELEASED YEAR : 2020
+                 </pre></li>         
+                 <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> BHAGI 3</div><BR><pre style="font-weight:bolder">
+    IMDB : 5/10
+    ACTOR : TIGER SHROFF
+    ACTRESS : SHRADHA KAPOOR
+    RELEASED YEAR : 2020
+                     </pre></li>   
+                     <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> VIRGIN BHANUPRIYA</div><BR><pre style="font-weight:bolder">
+    IMDB : 4.5/10
+    ACTOR : GAUTAM GULATI
+    ACTRESS : URVASHI RAUTELLA
+    RELEASED YEAR : 2020
+                         </pre></li>   
+                         <li><div style="font-size: 20PX;font-weight: bolder;color: orangered;"> RAAT AKELI HAI</div><BR><pre style="font-weight:bolder">
+    IMDB : 7.3/10
+    ACTOR : NAWAZUDDIN
+    ACTRESS : RADHIKA
+    RELEASED YEAR : 2020
+                             </pre></li>                                                                         
+                 </ul>
+             </div>
+       
+        <script>
+            function filter(){
+    var filterValue, input, ul,li,a,i;
+     input = document.getElementById("search");
+     filterValue = input.value.toUpperCase();
+    ul = document.getElementById("Menu");
+     li = ul.getElementsByTagName("li"); 
+        for (i = 0 ; i < li.length ; i++){
+            a = li[i].getElementsByTagName("div")[0];
+            if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+                li[i].style.display = "";
+                
+            }else if(a.innerHTML.toUpperCase().indexOf(filterValue) <= -1)
+            {
+                li[i].style.display = "none";
+            }
+            else
+            {
+                
+            }
+        }
+    }
+        </script>
+    </body>
+    
+</html>
